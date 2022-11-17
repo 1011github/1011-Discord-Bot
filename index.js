@@ -41,11 +41,11 @@ client.on("guildMemberAdd", (member) => {
    // member.guild.channels.cache.find(c => c.name === "﹒msg").send(`welc **${member.user.username}**<3`);
 });
 
-client.on("messageCreate", (message) => { // When a message is created
-    if(message.content === "james") { // If the message content is "!ping"
+client.on("messageCreate", (message) => { 
+    if(message.content === "james") { 
         const reactionEmoji = message.guild.emojis.cache.find(emoji => emoji.name === 'jcatlick');
         message.react(reactionEmoji)
-      // Send a message in the same channel with "Pong!"
+      
     }
 });
 
